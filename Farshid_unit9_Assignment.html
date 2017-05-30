@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<style>
+div {
+		font-size: 35px;
+	}
+	
+	h2 {
+	text-align: center;
+		color: crimson;
+	}
+	
+</style>
+<body>
+<div align=center>
+ <h3>Farshid Raminfar</h3>
+  <h2>Unit 9- Assignment - Problem 1</h2>
+   <h1 id="problem1">Hello World</h1>
+</div>
+
+<div>	
+
+<h2>Unit 9- Assignment - Problem 2</h2>
+	
+
+<div id="myDiv" onmouseOver="changeBoldToRed()">
+	<!-- onmouseOver="changeBoldToRed()" -->
+	<strong>We</strong> have just started <strong>this</strong> section for the users (<strong>beginner</strong> to intermediate) who want to work with <strong>various</strong> JavaScript <strong>problems</strong> and write scripts online to <strong>test</strong> their JavaScript <strong>skill</strong>.
+</div>
+
+</div>
+
+<script>
+//===== Problem #1 ============	
+	
+	document.getElementById("problem1").innerHTML = "Good Night World";
+	
+//====== End of Problem #1 ====
+	
+//====== Problem #2 ===========
+	
+var wordItems = document.getElementById("myDiv").getElementsByTagName("strong");
+
+for (var i = 0; i < wordItems.length; i++) {
+    wordItems[i].onmouseover = function () {
+		this.style.color= "red";
+	
+};
+}
+    
+	</script>
+
+</body>
+</html>
